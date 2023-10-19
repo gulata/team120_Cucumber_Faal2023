@@ -1,104 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="77.625" tests="5" skipped="0" failures="1" errors="0">
-<testcase classname="US1007 liste olarak verilen kullanici adi ve sifrelerle giris yapilamadigini test eder" name="TC11 qualitydemy sayfasina yanlis bilgilerle giris yapilamaz - Example #1.1" time="37.286">
+<testsuite name="Cucumber" time="23.547" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1008 Kullanici herokuapp sayfasinda beklemeleri yapar" name="TC12 Kullanici bekleme islemlerini yapar" time="23.23">
 <system-out><![CDATA[
-Given kullanici "qdUrl" anasayfaya gider....................................passed
-Then ilk login linkine tiklar...............................................passed
-And username kutusuna examples'dan "Suha" yazar.............................passed
-And password kutusuna examples'dan "12345" yazar............................passed
-Then 2 saniye bekler........................................................passed
-And login butonuna basar....................................................passed
-Then basarili giris yapilamadigini test eder................................passed
+Given kullanici "herokuappUrl" anasayfaya gider.............................passed
+When Add Element butona basar...............................................passed
+And Delete butonu gorunur oluncaya kadar bekler.............................passed
+Then Delete butonunun gorunur oldugunu test eder............................passed
+And Delete butonuna basarak butonu siler....................................passed
+And Delete butonunun gorunmedigini test eder................................passed
 And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1007 liste olarak verilen kullanici adi ve sifrelerle giris yapilamadigini test eder" name="TC11 qualitydemy sayfasina yanlis bilgilerle giris yapilamaz - Example #1.2" time="9.513">
-<system-out><![CDATA[
-Given kullanici "qdUrl" anasayfaya gider....................................passed
-Then ilk login linkine tiklar...............................................passed
-And username kutusuna examples'dan "Nergiz" yazar...........................passed
-And password kutusuna examples'dan "34521" yazar............................passed
-Then 2 saniye bekler........................................................passed
-And login butonuna basar....................................................passed
-Then basarili giris yapilamadigini test eder................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1007 liste olarak verilen kullanici adi ve sifrelerle giris yapilamadigini test eder" name="TC11 qualitydemy sayfasina yanlis bilgilerle giris yapilamaz - Example #1.3" time="8.958">
-<system-out><![CDATA[
-Given kullanici "qdUrl" anasayfaya gider....................................passed
-Then ilk login linkine tiklar...............................................passed
-And username kutusuna examples'dan "Omer" yazar.............................passed
-And password kutusuna examples'dan "786543" yazar...........................passed
-Then 2 saniye bekler........................................................passed
-And login butonuna basar....................................................passed
-Then basarili giris yapilamadigini test eder................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1007 liste olarak verilen kullanici adi ve sifrelerle giris yapilamadigini test eder" name="TC11 qualitydemy sayfasina yanlis bilgilerle giris yapilamaz - Example #1.4" time="10.329">
-<system-out><![CDATA[
-Given kullanici "qdUrl" anasayfaya gider....................................passed
-Then ilk login linkine tiklar...............................................passed
-And username kutusuna examples'dan "Mehmet" yazar...........................passed
-And password kutusuna examples'dan "98098" yazar............................passed
-Then 2 saniye bekler........................................................passed
-And login butonuna basar....................................................passed
-Then basarili giris yapilamadigini test eder................................passed
-And sayfayi kapatir.........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US1007 liste olarak verilen kullanici adi ve sifrelerle giris yapilamadigini test eder" name="TC11 qualitydemy sayfasina yanlis bilgilerle giris yapilamaz - Example #1.5" time="10.832">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn red radius-5 mt-4 w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (959, 541). Other element would receive the click: &lt;a onclick=&quot;cookie...();&quot;&gt;Accept&lt;/a&gt;
-  (Session info: chrome=118.0.5993.88)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [62e4e22a6727c1385f6b046c32434ce7, clickElement {id=FC20F886434976FD3D0432C9EBC3DE64_element_23}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\gazi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56788}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56788/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (62e4e22a6727c1385f6b046c32434ce7)] -&gt; xpath: //button[text()='Login']]
-Session ID: 62e4e22a6727c1385f6b046c32434ce7">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="btn red radius-5 mt-4 w-100">...</button> is not clickable at point (959, 541). Other element would receive the click: <a onclick="cookie...();">Accept</a>
-  (Session info: chrome=118.0.5993.88)
-Build info: version: '4.13.0', revision: 'ba948ece5b*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.20'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [62e4e22a6727c1385f6b046c32434ce7, clickElement {id=FC20F886434976FD3D0432C9EBC3DE64_element_23}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.88, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\gazi\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56788}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56788/devtoo..., se:cdpVersion: 118.0.5993.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (62e4e22a6727c1385f6b046c32434ce7)] -> xpath: //button[text()='Login']]
-Session ID: 62e4e22a6727c1385f6b046c32434ce7
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy21.click(Unknown Source)
-	at stepdefinitions.QualitydemyStepdefinitions.login_butonuna_basar(QualitydemyStepdefinitions.java:32)
-	at ✽.login butonuna basar(file:///C:/Users/gazi/IdeaProjects/Cucumber_Faal2023/src/test/resources/features/US1007_ScenarioOutlineIleNegatifLoginTesti.feature:12)
-]]>
-</failure>
-<system-out><![CDATA[
-Given kullanici "qdUrl" anasayfaya gider....................................passed
-Then ilk login linkine tiklar...............................................passed
-And username kutusuna examples'dan "Ertugrul" yazar.........................passed
-And password kutusuna examples'dan "87675098" yazar.........................passed
-Then 2 saniye bekler........................................................passed
-And login butonuna basar....................................................failed
-Then basarili giris yapilamadigini test eder................................skipped
-And sayfayi kapatir.........................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>
