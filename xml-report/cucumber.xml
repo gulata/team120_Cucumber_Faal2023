@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="23.547" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="US1008 Kullanici herokuapp sayfasinda beklemeleri yapar" name="TC12 Kullanici bekleme islemlerini yapar" time="23.23">
+<testsuite name="Cucumber" time="16.797" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1010 Kullanici baslik ile istedigi sutunu yazdirir" name="TC14 kullanici istedigi sutunu yazdirabilmeli" time="16.478">
 <system-out><![CDATA[
-Given kullanici "herokuappUrl" anasayfaya gider.............................passed
-When Add Element butona basar...............................................passed
-And Delete butonu gorunur oluncaya kadar bekler.............................passed
-Then Delete butonunun gorunur oldugunu test eder............................passed
-And Delete butonuna basarak butonu siler....................................passed
-And Delete butonunun gorunmedigini test eder................................passed
-And sayfayi kapatir.........................................................passed
+Given kullanici "guruUrl" anasayfaya gider..................................passed
+And "Current Price (Rs)", sutunundaki tum degerleri yazdirir................passed
 ]]></system-out>
 </testcase>
 </testsuite>
