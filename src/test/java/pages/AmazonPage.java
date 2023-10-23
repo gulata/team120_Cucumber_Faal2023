@@ -40,4 +40,19 @@ public class AmazonPage {
 
 
 
+@FindBy(xpath = "//select[@id='searchDropdownBox']")
+    public WebElement getDropDownElement;
+
+@FindBy(xpath = "(//div[@class='a-section aok-relative s-image-square-aspect'])[2]")
+    public WebElement ikinciElement;
+
+@FindBy(xpath = "//span[@id='productTitle']")
+    public WebElement ikinciUrunIsimElementi;
+
+@FindBy(xpath = "(//span[@class='a-offscreen'])[6]")
+    public WebElement ikinciUrunFiyatElementi;
+
+@FindBy(xpath = "//*[@id='add-to-cart-button']")
+    public WebElement addToCardButonu;
+
 }

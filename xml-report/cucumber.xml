@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="22.013" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="US1012 Kullanici excele data ekler" name="TC16 Kullanici excel'e data ekleyebilmeli" time="21.289">
-<failure type="java.io.FileNotFoundException" message="src\test\resources\ulkeler.xlsx (Sistem belirtilen dosyayı bulamıyor)">
-<![CDATA[java.io.FileNotFoundException: src\test\resources\ulkeler.xlsx (Sistem belirtilen dosyayı bulamıyor)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at stepdefinitions.ExcelStepdefinitions.kullanici_ulkeler_excelinde_sayfa1_e_kadar_ayarlari_yapar(ExcelStepdefinitions.java:26)
-	at ✽.kullanici ulkeler excelinde Sayfa1'e kadar ayarlari yapar(file:///C:/Users/gazi/IdeaProjects/Cucumber_Faal2023/src/test/resources/features/US1012_WriteExcelTesti.feature:6)
+<testsuite name="Cucumber" time="12.676" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="US1014 Amazon Testleri" name="TC18 dropdown testi" time="11.615">
+<system-out><![CDATA[
+Given kullanici "amazonUrl" anasayfaya gider................................passed
+Then Arama kutusunun solundaki dropdown menuye handle edin..................passed
+And dropdown menudeki opsiyonlari liste olarak yazdirii.....................passed
+Then dropdown menude 28 eleman oldugunu test  edin..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1014 Amazon Testleri" name="" time="0.669">
+<failure type="java.lang.NullPointerException">
+<![CDATA[java.lang.NullPointerException
+	at stepdefinitions.AmazonStepdefinitions.dropdown_menuden_elektronik_bolumu_secer(AmazonStepdefinitions.java:134)
+	at ✽.dropdown menuden elektronik bolumu secer(file:///C:/Users/gazi/IdeaProjects/Cucumber_Faal2023/src/test/resources/features/US1014_dropdownTest.feature:11)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given kullanici ulkeler excelinde Sayfa1'e kadar ayarlari yapar.............failed
-Then 5.sutunu olusturur.....................................................skipped
-And baslik satirinda besinci hucreye yeni bir cell olusturur................skipped
-And Olusturdugu hucreye "ulke nufusu" yazdirir..............................skipped
-Then 2.satir ulke nufusu kolonuna 1500000000 yazdirir.......................skipped
-And 8.satir ulke nufusu kolonuna 250000000 yazdirir.........................skipped
-And Dosyayi kaydeder........................................................skipped
-Then excel'de 2.satirin ulke nufusunun 1500000000 oldugunu test eder........skipped
-And excel'de 8.satirin ulke nufusunun 250000000 oldugunu test eder..........skipped
-And stream'leri kapatir.....................................................skipped
+When dropdown menuden elektronik bolumu secer...............................failed
+And arama kutusuna "iphone" yazip aratir....................................skipped
+And bulunan sonuc sayisini yazdirir.........................................skipped
+And arama sonuclarinin "iphone" icerdigini test eder........................skipped
+Then ikinci urune tiklar....................................................skipped
+And urunun title'ni ve fiyatini variable'a assing edip urunu sepete ekleyelim.skipped
 ]]></system-out>
 </testcase>
 </testsuite>
